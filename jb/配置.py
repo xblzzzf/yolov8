@@ -1,4 +1,5 @@
 from ultralytics import YOLO
+
 # Load a COCO-pretrained YOLOv8n model
 # 加载预训练的YOLOv8n模型
 model = YOLO("yolov8s.pt")
