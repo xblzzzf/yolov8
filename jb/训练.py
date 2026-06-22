@@ -1,10 +1,11 @@
 import os
+
 from ultralytics import YOLO
 
 # 解决 OpenMP 冲突
-os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Load a COCO-pretrained YOLOv8s model
     # 加载预训练的YOLOv8s模型
     model = YOLO("yolov8s.pt")
